@@ -15,11 +15,11 @@ const faqs = [
   },
   {
     question: "What can the AI advisor do?",
-    answer: "Our AI can analyse your spending patterns, suggest budgets, help you create savings goals, track recurring bills, and provide personalised tips to improve your financial health. Pro users get unlimited conversations with 5 specialised AI advisors.",
+    answer: "Our AI can analyse your spending patterns, suggest budgets, help you create savings goals, track recurring bills, and provide personalised tips to improve your financial health. Free users get 10 messages per day with Money Monkey. Pro unlocks unlimited conversations with all 5 specialist monkeys: Budget Gorilla, Savings Chimp, Spend Orangutan, and Invest Baboon.",
   },
   {
     question: "Can I cancel my subscription anytime?",
-    answer: "Yes. Go to iPhone Settings → your name → Subscriptions → Money Monkey → Cancel. Your Pro features remain active until the end of your current billing period. No questions asked.",
+    answer: "Yes. Both plans include a 7-day free trial — you won't be charged until day 7. To cancel, go to iPhone Settings → your name → Subscriptions → Money Monkey → Cancel. Your Pro features remain active until the end of your current billing period. No questions asked.",
   },
   {
     question: "How do I delete my account and data?",

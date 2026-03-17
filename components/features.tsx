@@ -4,7 +4,7 @@ const features = [
   {
     icon: Brain,
     title: "AI Financial Advisor",
-    description: "Chat with 5 specialised AI monkeys — from budgeting to investing — each with personalised advice based on your real spending data.",
+    description: "Chat with 5 specialist monkeys — Money Monkey, Budget Gorilla, Savings Chimp, Spend Orangutan, and Invest Baboon — each giving personalised advice from your real data.",
   },
   {
     icon: Landmark,
