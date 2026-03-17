@@ -13,11 +13,13 @@ export function Hero() {
 
       <div className="relative max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
         <div className="relative text-center lg:text-left flex-1">
-          <div className="inline-flex items-center gap-2 bg-black/40 px-4 py-2 rounded-full border border-white/10 mb-8 backdrop-blur-sm">
-            <span className="relative inline-flex w-7 h-7 rounded-full overflow-hidden bg-black/60">
+          <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border mb-8 backdrop-blur-xl bg-black/70 border-[#29A06E]/70 shadow-[0_0_25px_rgba(41,160,110,0.45)]">
+            <span className="relative inline-flex w-8 h-8 rounded-full overflow-hidden bg-[#F5CC61] shadow-md">
               <Image src="/app-icon.png" alt="Money Monkey app icon" fill className="object-cover" sizes="28px" />
             </span>
-            <span className="text-sm text-white/80">AI-powered finance tracking</span>
+            <span className="text-sm font-semibold tracking-wide text-white">
+              AI-powered finance tracking
+            </span>
           </div>
 
           <AnimatedHeading
