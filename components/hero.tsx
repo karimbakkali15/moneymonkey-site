@@ -5,7 +5,7 @@ import { ArrowRight, Shield, Sparkles } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 pb-16 sm:pb-24 overflow-hidden min-h-[70vh] flex items-center">
+    <section className="relative px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 pb-14 sm:pb-24 overflow-hidden min-h-[60vh] flex items-center">
       <div className="absolute inset-0">
         <Image
           src="/jungle-hero.png"
@@ -31,15 +31,15 @@ export function Hero() {
 
           <AnimatedHeading
             text="Your money, made smarter."
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-balance text-white"
+            className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight text-balance text-white"
           />
 
-          <p className="text-lg text-white/85 max-w-xl mt-5 mb-8 text-pretty leading-relaxed mx-auto lg:mx-0">
+          <p className="text-base sm:text-lg text-white/85 max-w-xl mt-4 mb-6 sm:mb-8 text-pretty leading-relaxed mx-auto lg:mx-0">
             Connect your bank, track every penny, and get personalised AI advice to grow your wealth. Money Monkey makes
             finance effortless.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-6 sm:mb-8">
             <Link
               href="https://apps.apple.com"
               className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#177352] to-[#29A06E] text-white px-6 py-3.5 rounded-xl font-medium hover:opacity-90 transition-opacity shadow-lg shadow-black/40"
@@ -52,7 +52,7 @@ export function Hero() {
             </Link>
           </div>
 
-          <div className="flex items-center gap-6 justify-center lg:justify-start">
+          <div className="hidden sm:flex items-center gap-6 justify-center lg:justify-start">
             <div className="flex items-center gap-2">
               <Shield className="w-5 h-5 text-[#29A06E]" />
               <span className="text-sm text-white/80">Bank-level security</span>
