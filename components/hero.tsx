@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AnimatedHeading } from "@/components/animated-heading";
 import Image from "next/image";
 import { ArrowRight, Shield, Sparkles } from "lucide-react";
 
@@ -16,10 +17,7 @@ export function Hero() {
           <span className="text-sm text-muted-foreground">AI-powered finance tracking</span>
         </div>
 
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance mb-6">
-          Your money,{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#29A06E] to-[#43d990]">made smarter.</span>
-        </h1>
+        <AnimatedHeading text="Your money, made smarter." className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-balance" />
 
         <p className="text-lg text-muted-foreground max-w-xl mx-auto text-pretty leading-relaxed mb-10">
           Connect your bank, track every penny, and get personalised AI advice to grow your wealth. Money Monkey makes finance effortless.
