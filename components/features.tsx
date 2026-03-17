@@ -1,35 +1,35 @@
-import { Wallet, PieChart, Bell, Lock, Smartphone, TrendingUp } from "lucide-react";
+import { Brain, Landmark, PiggyBank, Receipt, BarChart3, Shield } from "lucide-react";
 
 const features = [
   {
-    icon: Wallet,
-    title: "Smart Budgeting",
-    description: "AI-powered budgeting that learns your spending habits and helps you save more automatically.",
+    icon: Brain,
+    title: "AI Financial Advisor",
+    description: "Chat with 5 specialised AI monkeys — from budgeting to investing — each with personalised advice based on your real spending data.",
   },
   {
-    icon: PieChart,
-    title: "Investment Tracking",
-    description: "Monitor all your investments in one place with real-time updates and performance insights.",
+    icon: Landmark,
+    title: "Open Banking",
+    description: "Securely connect your UK bank accounts via Tink. Your transactions sync automatically — no manual entry needed.",
   },
   {
-    icon: Bell,
-    title: "Smart Alerts",
-    description: "Get notified about unusual spending, bill reminders, and opportunities to save.",
+    icon: PiggyBank,
+    title: "Savings Goals",
+    description: "Set savings buckets with targets and deadlines. Watch your progress grow with visual trackers and milestone celebrations.",
   },
   {
-    icon: Lock,
-    title: "Bank-Grade Security",
-    description: "Your data is protected with 256-bit encryption and multi-factor authentication.",
+    icon: Receipt,
+    title: "Recurring Bills",
+    description: "Automatically detect and track recurring payments. Get alerts before bills are due so you're never caught off guard.",
   },
   {
-    icon: Smartphone,
-    title: "Mobile First",
-    description: "Access your finances anywhere with our beautifully designed mobile app.",
+    icon: BarChart3,
+    title: "Spending Analytics",
+    description: "Detailed breakdowns by category, merchant, and time period. Understand exactly where your money goes each month.",
   },
   {
-    icon: TrendingUp,
-    title: "Growth Insights",
-    description: "Personalized recommendations to help grow your wealth faster.",
+    icon: Shield,
+    title: "Secure by Design",
+    description: "Bank tokens stored in device Keychain. HTTPS everywhere. No passwords stored. Your financial data stays yours.",
   },
 ];
 
@@ -37,26 +37,23 @@ export function Features() {
   return (
     <section id="features" className="py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance">
-            Everything you need to manage your money
+            Everything you need to master your money
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Powerful features designed to help you take control of your finances 
-            and build lasting wealth.
+            Powerful features wrapped in a beautiful interface, designed to make personal finance actually enjoyable.
           </p>
         </div>
 
-        {/* Features grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="group bg-card border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300"
+              className="group bg-card border border-border rounded-2xl p-6 hover:border-[#29A06E]/40 transition-all duration-300"
             >
-              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                <feature.icon className="w-6 h-6 text-primary" />
+              <div className="w-12 h-12 bg-[#29A06E]/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-[#29A06E]/20 transition-colors">
+                <feature.icon className="w-6 h-6 text-[#29A06E]" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">
                 {feature.title}

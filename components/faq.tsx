@@ -7,23 +7,27 @@ import { cn } from "@/lib/utils";
 const faqs = [
   {
     question: "Is my financial data secure?",
-    answer: "Absolutely. We use bank-level 256-bit encryption to protect your data. We're also SOC 2 Type II certified and never sell your personal information to third parties.",
+    answer: "Yes. Bank connections are handled through Tink, a regulated open banking provider licensed by the Swedish Financial Supervisory Authority. Sensitive tokens are stored in your device's secure Keychain, and all communication uses HTTPS. We never see your bank login credentials.",
   },
   {
-    question: "How does MoneyMonkey connect to my bank?",
-    answer: "We use Plaid, a secure and trusted service used by major financial apps, to connect to your bank accounts. You'll authenticate directly with your bank, and we never see your login credentials.",
+    question: "How does Money Monkey connect to my bank?",
+    answer: "We use Tink, a trusted and regulated open banking provider. You authenticate directly with your bank through Tink's secure portal. Money Monkey never sees or stores your banking login details.",
+  },
+  {
+    question: "What can the AI advisor do?",
+    answer: "Our AI can analyse your spending patterns, suggest budgets, help you create savings goals, track recurring bills, and provide personalised tips to improve your financial health. Pro users get unlimited conversations with 5 specialised AI advisors.",
   },
   {
     question: "Can I cancel my subscription anytime?",
-    answer: "Yes, you can cancel your subscription at any time with no questions asked. If you cancel, you'll continue to have access until the end of your billing period.",
+    answer: "Yes. Go to iPhone Settings → your name → Subscriptions → Money Monkey → Cancel. Your Pro features remain active until the end of your current billing period. No questions asked.",
   },
   {
-    question: "What happens to my data if I cancel?",
-    answer: "You can export all your data before canceling. After cancellation, we retain your data for 30 days in case you change your mind, then it's permanently deleted.",
+    question: "How do I delete my account and data?",
+    answer: "Go to Settings in the app → scroll to the bottom → tap Delete Account. This permanently removes your account and all associated data within 30 days.",
   },
   {
-    question: "Do you offer refunds?",
-    answer: "We offer a full refund within the first 14 days of any paid subscription. After that, you can cancel anytime but refunds aren't available for partial months.",
+    question: "Which banks are supported?",
+    answer: "Money Monkey supports most major UK banks through Tink's open banking integration, including Barclays, HSBC, Lloyds, NatWest, Santander, Monzo, Starling, and many more.",
   },
 ];
 
@@ -33,17 +37,15 @@ export function FAQ() {
   return (
     <section id="faq" className="py-24 px-4 sm:px-6 lg:px-8 bg-card/50">
       <div className="max-w-3xl mx-auto">
-        {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance">
             Frequently asked questions
           </h2>
           <p className="text-lg text-muted-foreground text-pretty">
-            Everything you need to know about MoneyMonkey.
+            Everything you need to know about Money Monkey.
           </p>
         </div>
 
-        {/* FAQ items */}
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div

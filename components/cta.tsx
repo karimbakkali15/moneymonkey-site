@@ -6,33 +6,29 @@ export function CTA() {
     <section className="py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
         <div className="bg-card border border-border rounded-3xl p-12 relative overflow-hidden">
-          {/* Background gradient */}
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--color-primary)_0%,_transparent_70%)] opacity-10" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#177352_0%,_transparent_70%)] opacity-15" />
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#F5CC61] opacity-[0.04] rounded-full blur-[80px]" />
           
           <div className="relative">
+            <span className="text-5xl mb-6 block">🐒</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance">
-              Ready to take control of your finances?
+              Ready to get smarter with your money?
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto text-pretty">
-              Join over 50,000 people who are already building their financial future with MoneyMonkey.
+              Download Money Monkey and start tracking, saving, and growing your wealth with AI-powered insights.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="#"
-                className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-medium hover:bg-primary/90 transition-colors"
+                href="https://apps.apple.com"
+                className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#177352] to-[#29A06E] text-white px-8 py-4 rounded-xl font-medium hover:opacity-90 transition-opacity shadow-lg shadow-[#177352]/20"
               >
-                Get Started Free
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                Download on App Store
                 <ArrowRight className="w-4 h-4" />
-              </Link>
-              <Link
-                href="#"
-                className="inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground px-8 py-4 rounded-lg font-medium hover:bg-secondary/80 transition-colors"
-              >
-                Schedule a Demo
               </Link>
             </div>
             <p className="text-sm text-muted-foreground mt-6">
-              No credit card required. Start your free 14-day trial today.
+              Free to download. No credit card required.
             </p>
           </div>
         </div>

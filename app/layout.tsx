@@ -14,12 +14,12 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MoneyMonkey | Smart Finance Made Simple",
-  description: "Take control of your finances with MoneyMonkey. Track spending, set budgets, and grow your wealth with our intelligent financial platform.",
+  title: "Money Monkey | AI-Powered Finance Tracking",
+  description: "Track spending, set budgets, and get personalised AI advice to grow your wealth. Connect your bank and let Money Monkey do the rest.",
 };
 
 export const viewport: Viewport = {
-  themeColor: "#09090b",
+  themeColor: "#0D1712",
 };
 
 export default function RootLayout({

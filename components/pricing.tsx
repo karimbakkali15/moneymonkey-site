@@ -5,48 +5,49 @@ import { cn } from "@/lib/utils";
 const plans = [
   {
     name: "Free",
-    price: "$0",
+    price: "£0",
     period: "forever",
-    description: "Perfect for getting started with personal finance.",
+    description: "Get started with core budgeting and tracking.",
     features: [
-      "Connect up to 2 accounts",
-      "Basic spending insights",
-      "Monthly reports",
-      "Mobile app access",
+      "Connect your bank account",
+      "Automatic transaction tracking",
+      "Basic spending breakdown",
+      "Savings goals",
+      "5 AI messages per day",
     ],
-    cta: "Start Free",
+    cta: "Download Free",
     popular: false,
   },
   {
-    name: "Pro",
-    price: "$9",
+    name: "Pro Monthly",
+    price: "£4.99",
     period: "per month",
-    description: "For those serious about growing their wealth.",
+    description: "Unlock the full power of Money Monkey.",
     features: [
-      "Unlimited account connections",
-      "AI-powered insights",
-      "Investment tracking",
-      "Custom budgets & goals",
+      "Everything in Free",
+      "Unlimited AI conversations",
+      "All 5 AI advisor monkeys",
+      "Advanced analytics & insights",
+      "Recurring bill tracking",
       "Priority support",
-      "Export data anytime",
     ],
-    cta: "Start Pro Trial",
+    cta: "Start Pro",
     popular: true,
   },
   {
-    name: "Family",
-    price: "$19",
-    period: "per month",
-    description: "Manage finances for the whole household.",
+    name: "Pro Annual",
+    price: "£29.99",
+    period: "per year",
+    description: "Best value — save over 50% vs monthly.",
     features: [
-      "Everything in Pro",
-      "Up to 5 family members",
-      "Shared budgets & goals",
-      "Family spending insights",
-      "Parental controls",
-      "Dedicated support",
+      "Everything in Pro Monthly",
+      "Works out to £2.50/month",
+      "One payment, full year access",
+      "Early access to new features",
+      "Priority support",
+      "Best value",
     ],
-    cta: "Start Family Trial",
+    cta: "Start Pro Annual",
     popular: false,
   },
 ];
@@ -55,17 +56,15 @@ export function Pricing() {
   return (
     <section id="pricing" className="py-24 px-4 sm:px-6 lg:px-8 bg-card/50">
       <div className="max-w-7xl mx-auto">
-        {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance">
-            Simple, transparent pricing
+            Simple, honest pricing
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Choose the plan that fits your needs. All plans include a 14-day free trial.
+            Start free, upgrade when you&apos;re ready. Cancel anytime.
           </p>
         </div>
 
-        {/* Pricing cards */}
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {plans.map((plan) => (
             <div
@@ -73,12 +72,12 @@ export function Pricing() {
               className={cn(
                 "relative bg-card border rounded-2xl p-8 flex flex-col",
                 plan.popular
-                  ? "border-primary shadow-lg shadow-primary/10"
+                  ? "border-[#29A06E] shadow-lg shadow-[#29A06E]/10"
                   : "border-border"
               )}
             >
               {plan.popular && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-medium px-3 py-1 rounded-full">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#177352] to-[#29A06E] text-white text-xs font-medium px-3 py-1 rounded-full">
                   Most Popular
                 </div>
               )}
@@ -101,18 +100,18 @@ export function Pricing() {
               <ul className="space-y-3 mb-8 flex-1">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-[#29A06E] shrink-0 mt-0.5" />
                     <span className="text-sm text-muted-foreground">{feature}</span>
                   </li>
                 ))}
               </ul>
 
               <Link
-                href="#"
+                href="https://apps.apple.com"
                 className={cn(
-                  "w-full py-3 rounded-lg font-medium text-center transition-colors",
+                  "w-full py-3 rounded-xl font-medium text-center transition-all",
                   plan.popular
-                    ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                    ? "bg-gradient-to-r from-[#177352] to-[#29A06E] text-white hover:opacity-90 shadow-lg shadow-[#177352]/20"
                     : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
                 )}
               >
