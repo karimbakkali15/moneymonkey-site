@@ -20,7 +20,7 @@ const plans = [
   },
   {
     name: "Pro Monthly",
-    price: "£2.99",
+    price: "£9.99",
     period: "per month",
     description: "Unlock the full power of Money Monkey.",
     features: [
@@ -36,9 +36,9 @@ const plans = [
   },
   {
     name: "Pro Annual",
-    price: "£19.49",
+    price: "£99.99",
     period: "per year",
-    description: "Best value — save over 45% vs monthly.",
+    description: "Best value — save over 15% vs monthly.",
     features: [
       "Everything in Pro Monthly",
       "One payment, full year access",
