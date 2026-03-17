@@ -5,15 +5,22 @@ import { ArrowRight, Shield, Sparkles } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative pt-32 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 pb-16 sm:pb-24 overflow-hidden min-h-[70vh] flex items-center">
       <div className="absolute inset-0">
-        <Image src="/jungle-hero.png" alt="Jungle background" fill priority className="object-cover" sizes="100vw" />
+        <Image
+          src="/jungle-hero.png"
+          alt="Jungle background"
+          fill
+          priority
+          className="object-cover object-[center_top]"
+          sizes="100vw"
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/55 to-[#050908]" />
       </div>
 
-      <div className="relative max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+      <div className="relative max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10">
         <div className="relative text-center lg:text-left flex-1">
-          <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border mb-8 backdrop-blur-xl bg-black/70 border-[#29A06E]/70 shadow-[0_0_25px_rgba(41,160,110,0.45)]">
+          <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border mb-6 sm:mb-8 backdrop-blur-xl bg-black/70 border-[#29A06E]/70 shadow-[0_0_25px_rgba(41,160,110,0.45)] max-w-full">
             <span className="relative inline-flex w-8 h-8 rounded-full overflow-hidden bg-[#F5CC61] shadow-md">
               <Image src="/app-icon.png" alt="Money Monkey app icon" fill className="object-cover" sizes="28px" />
             </span>
