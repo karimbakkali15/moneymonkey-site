@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Shield, Sparkles } from "lucide-react";
 
 export function Hero() {
@@ -11,7 +12,7 @@ export function Hero() {
 
       <div className="max-w-3xl mx-auto relative text-center">
         <div className="inline-flex items-center gap-2 bg-secondary px-4 py-2 rounded-full border border-border mb-8">
-          <span className="text-lg">🐒</span>
+          <span className="relative inline-flex w-7 h-7 rounded-full overflow-hidden bg-black/40"><Image src="/app-icon.png" alt="Money Monkey app icon" fill className="object-cover" sizes="28px" /></span>
           <span className="text-sm text-muted-foreground">AI-powered finance tracking</span>
         </div>
 

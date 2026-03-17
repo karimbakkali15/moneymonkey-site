@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -19,7 +20,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2.5">
-            <span className="text-2xl">🐒</span>
+            <span className="relative inline-flex w-7 h-7 rounded-xl overflow-hidden bg-black/40"><Image src="/app-icon.png" alt="Money Monkey app icon" fill className="object-cover" sizes="28px" /></span>
             <span className="font-bold text-xl text-foreground">Money Monkey</span>
           </Link>
 
