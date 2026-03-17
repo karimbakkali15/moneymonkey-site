@@ -6,10 +6,10 @@ import { ArrowRight, Shield, Sparkles } from "lucide-react";
 export function Hero() {
   return (
     <section className="relative pt-32 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      {/* Jungle gradient background */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_#177352_0%,_transparent_50%)] opacity-15" />
-      <div className="absolute top-20 -left-32 w-96 h-96 bg-[#29A06E] opacity-[0.07] rounded-full blur-[100px]" />
-      <div className="absolute bottom-0 right-0 w-80 h-80 bg-[#F5CC61] opacity-[0.05] rounded-full blur-[100px]" />
+       <div className="absolute inset-0">
+        <Image src="/jungle-hero.png" alt="Jungle background" fill priority className="object-cover" sizes="100vw" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-[#0D1712]" />
+      </div>
 
       <div className="max-w-3xl mx-auto relative text-center">
         <div className="inline-flex items-center gap-2 bg-secondary px-4 py-2 rounded-full border border-border mb-8">
