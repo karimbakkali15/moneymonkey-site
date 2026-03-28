@@ -5,7 +5,7 @@ import { ArrowRight, Shield, Sparkles } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 pb-14 sm:pb-24 overflow-hidden min-h-[60vh] flex items-center">
+    <section className="relative px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 pb-14 sm:pb-24 overflow-x-hidden min-h-[60vh] flex items-center">
       <div className="absolute inset-0 bg-[#080f24]">
         <div
           className="absolute inset-0 opacity-90"
@@ -33,7 +33,7 @@ export function Hero() {
 
           <AnimatedHeading
             text="Clarity for every pound."
-            className="text-3xl sm:text-5xl lg:text-[3.25rem] leading-[1.12] text-balance text-white"
+            className="text-3xl sm:text-5xl lg:text-[3.25rem] leading-[1.2] sm:leading-[1.18] text-balance text-white"
           />
 
           <p className="font-sans text-base sm:text-lg text-white/72 max-w-xl mt-4 mb-6 sm:mb-8 text-pretty leading-relaxed mx-auto lg:mx-0">
