@@ -7,16 +7,18 @@ import { cn } from "@/lib/utils";
 const screens = [
   { id: "home", label: "Home", src: "/screenshots/home.png" },
   { id: "savings", label: "Savings", src: "/screenshots/savings.png" },
-  { id: "ai", label: "AI assistant", src: "/screenshots/ai-chat.png" },
+  { id: "ai", label: "Assistant", src: "/screenshots/ai-chat.png" },
   { id: "analytics", label: "Analytics", src: "/screenshots/analytics.png" },
-  { id: "leaderboard", label: "Leaderboard", src: "/screenshots/leaderboard.png" },
+  { id: "insights", label: "Score", src: "/screenshots/insights.png" },
+  { id: "future", label: "What-if", src: "/screenshots/financial-future.png" },
+  { id: "accounts", label: "Accounts", src: "/screenshots/accounts.png" },
 ];
 
 function PhoneFrame({ src, alt }: { src: string; alt: string }) {
   return (
     <div className="relative mx-auto shrink-0" style={{ width: 270, height: 555 }}>
       <div className="absolute inset-0 rounded-[40px] border-[3px] border-white/10 bg-black shadow-2xl shadow-black/60 ring-1 ring-white/[0.05] overflow-hidden">
-        <Image src={src} alt={alt} fill className="object-cover" sizes="270px" priority />
+        <Image src={src} alt={`Meridian — ${alt}`} fill className="object-cover object-top" sizes="270px" priority />
       </div>
     </div>
   );
