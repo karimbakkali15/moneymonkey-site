@@ -3,7 +3,7 @@ import { Newsreader, Nunito } from "next/font/google";
 import "./globals.css";
 
 /** Canonical production URL — set your Vercel project name to `meridian` (see README). */
-const siteUrl = "https://meridian.vercel.app";
+const siteUrl = "https://meridian-finance-site.vercel.app";
 
 /** Rounded UI — parallels SF Rounded in the app (lists, body, buttons). */
 const nunito = Nunito({

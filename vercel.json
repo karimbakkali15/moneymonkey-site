@@ -1,5 +1,19 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "nextjs",
-  "regions": ["lhr1"]
+  "regions": ["lhr1"],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "meridian.financialadvisor" }],
+      "destination": "https://meridian-finance-site.vercel.app/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.meridian.financialadvisor" }],
+      "destination": "https://meridian-finance-site.vercel.app/:path*",
+      "permanent": true
+    }
+  ]
 }
