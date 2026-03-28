@@ -17,7 +17,7 @@ export function AnimatedHeading({
       )}
     >
       {/* No overflow-hidden — it clips serif descenders (p, y, g). Letters start invisible + offset. */}
-      <span className="relative inline-flex flex-wrap justify-center lg:justify-start align-baseline">
+      <span className="relative inline-flex flex-nowrap whitespace-nowrap justify-center lg:justify-start align-baseline">
         {text.split("").map((char, i) => (
           <span
             key={i}

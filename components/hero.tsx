@@ -22,18 +22,16 @@ export function Hero() {
 
       <div className="relative max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10">
         <div className="relative text-center lg:text-left flex-1">
-          <div className="inline-flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3 px-5 py-2.5 rounded-full border mb-6 sm:mb-8 backdrop-blur-xl bg-black/40 border-white/[0.12] shadow-[0_0_40px_rgba(51,115,250,0.15)] max-w-full">
-            <div className="inline-flex items-center justify-center sm:justify-start gap-3">
-              <span className="relative inline-flex w-8 h-8 rounded-full overflow-hidden ring-1 ring-[#e0c78c]/25 shadow-lg shadow-black/40">
-                <Image src="/app-icon.png" alt="Meridian app icon" fill className="object-cover" sizes="28px" />
-              </span>
-              <span className="type-meta-caps text-white/80">Meridian · App</span>
-            </div>
+          <div className="inline-flex flex-row items-center gap-3 px-5 py-2.5 rounded-full border mb-6 sm:mb-8 backdrop-blur-xl bg-black/40 border-white/[0.12] shadow-[0_0_40px_rgba(51,115,250,0.15)] max-w-full">
+            <span className="relative inline-flex w-8 h-8 shrink-0 rounded-full overflow-hidden ring-1 ring-[#e0c78c]/25 shadow-lg shadow-black/40">
+              <Image src="/app-icon.png" alt="Meridian app icon" fill className="object-cover" sizes="28px" />
+            </span>
+            <span className="type-meta-caps text-white/80 whitespace-nowrap">Meridian · App</span>
           </div>
 
           <AnimatedHeading
             text="Clarity for every pound."
-            className="text-3xl sm:text-5xl lg:text-[3.25rem] leading-[1.2] sm:leading-[1.18] text-balance text-white"
+            className="max-w-full text-[clamp(1.5rem,4.2vw+0.6rem,3.25rem)] sm:text-5xl lg:text-[3.25rem] leading-[1.2] sm:leading-[1.18] text-white"
           />
 
           <p className="font-sans text-base sm:text-lg text-white/72 max-w-xl mt-4 mb-6 sm:mb-8 text-pretty leading-relaxed mx-auto lg:mx-0">

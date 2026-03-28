@@ -19,11 +19,13 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#0f0f12]/85 backdrop-blur-xl border-b border-white/[0.06]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2.5">
-            <span className="relative inline-flex w-7 h-7 rounded-xl overflow-hidden ring-1 ring-white/10">
+          <Link href="/" className="flex min-w-0 shrink items-center gap-2.5">
+            <span className="relative inline-flex h-7 w-7 shrink-0 rounded-xl overflow-hidden ring-1 ring-white/10">
               <Image src="/app-icon.png" alt="Meridian app icon" fill className="object-cover" sizes="28px" />
             </span>
-            <span className="font-serif font-semibold text-lg tracking-tight text-foreground">Meridian</span>
+            <span className="font-serif text-lg font-semibold tracking-tight text-foreground whitespace-nowrap">
+              Meridian
+            </span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
