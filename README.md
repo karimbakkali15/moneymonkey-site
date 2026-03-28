@@ -1,6 +1,6 @@
 # Meridian marketing site
 
-Next.js landing page for **Meridian**, styled to match the iOS app’s premium dark UI (cool blue primary `#3373fa`, elevated surfaces `#1f1f21`, deep base `#0f0f12`).
+Next.js landing page for **Meridian**, aligned with the iOS `DesignSystem`: **Newsreader** (display serif, like SF Serif / New York), **Nunito** (rounded UI, like SF Rounded), champagne gold highlights `#e0c78c` / `#c7a870`, and blue primary `#3373fa`.
 
 ## Develop
 

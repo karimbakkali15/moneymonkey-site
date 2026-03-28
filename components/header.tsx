@@ -23,7 +23,7 @@ export function Header() {
             <span className="relative inline-flex w-7 h-7 rounded-xl overflow-hidden ring-1 ring-white/10">
               <Image src="/app-icon.png" alt="Meridian app icon" fill className="object-cover" sizes="28px" />
             </span>
-            <span className="font-semibold text-lg tracking-tight text-foreground">Meridian</span>
+            <span className="font-serif font-semibold text-lg tracking-tight text-foreground">Meridian</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -31,7 +31,7 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
+                className="font-sans text-muted-foreground hover:text-[#e0c78c] transition-colors text-sm font-medium"
               >
                 {link.label}
               </Link>
@@ -41,7 +41,7 @@ export function Header() {
           <div className="hidden md:flex items-center gap-4">
             <Link
               href="https://apps.apple.com"
-              className="bg-gradient-to-r from-[#2556d8] to-[#3373fa] text-white px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-95 transition-opacity shadow-md shadow-[#3373fa]/20"
+              className="font-sans bg-gradient-to-r from-[#2556d8] to-[#3373fa] text-white px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-95 transition-opacity shadow-md shadow-[#3373fa]/20 ring-1 ring-[#e0c78c]/15"
             >
               Download
             </Link>
@@ -68,7 +68,7 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium py-2"
+              className="font-sans text-muted-foreground hover:text-[#e0c78c] transition-colors text-sm font-medium py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               {link.label}
@@ -77,7 +77,7 @@ export function Header() {
           <div className="pt-4 border-t border-white/[0.06]">
             <Link
               href="https://apps.apple.com"
-              className="block bg-gradient-to-r from-[#2556d8] to-[#3373fa] text-white px-4 py-3 rounded-lg text-sm font-semibold text-center"
+              className="font-sans block bg-gradient-to-r from-[#2556d8] to-[#3373fa] text-white px-4 py-3 rounded-lg text-sm font-semibold text-center ring-1 ring-[#e0c78c]/15"
             >
               Download
             </Link>

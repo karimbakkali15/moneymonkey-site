@@ -31,11 +31,12 @@ export function Screenshots() {
     <section id="screenshots" className="py-24 px-4 sm:px-6 lg:px-8 bg-card/40 border-y border-white/[0.04] overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground mb-4 text-balance">
+          <h2 className="font-serif text-3xl sm:text-4xl font-semibold tracking-tight text-foreground mb-4 text-balance">
             See it in action
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">
-            A refined dark interface built for focus — the same premium language as the app.
+          <p className="font-sans text-lg text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">
+            A refined dark interface — the same <span className="text-[#e0c78c] font-medium">premium</span> language as
+            the app.
           </p>
         </div>
 
@@ -45,9 +46,9 @@ export function Screenshots() {
               key={s.id}
               onClick={() => setActive(i)}
               className={cn(
-                "px-4 py-2 rounded-full text-sm font-medium transition-all",
+                "font-sans px-4 py-2 rounded-full text-sm font-medium transition-all",
                 active === i
-                  ? "bg-[#3373fa] text-white shadow-lg shadow-[#3373fa]/25"
+                  ? "bg-[#3373fa] text-white shadow-lg shadow-[#3373fa]/25 ring-1 ring-[#e0c78c]/35"
                   : "bg-secondary text-muted-foreground hover:text-foreground border border-white/[0.06]"
               )}
             >
@@ -66,7 +67,9 @@ export function Screenshots() {
 
           <div className="transition-all duration-500 scale-100">
             <PhoneFrame src={screens[active].src} alt={screens[active].label} />
-            <p className="text-center text-sm text-muted-foreground mt-6 font-medium">{screens[active].label}</p>
+            <p className="font-sans text-center text-sm text-muted-foreground mt-6 font-medium">
+              <span className="text-[#e0c78c]/90">{screens[active].label}</span>
+            </p>
           </div>
 
           <div className="hidden md:block opacity-40 scale-90 transition-all duration-500">

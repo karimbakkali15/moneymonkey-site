@@ -1,10 +1,19 @@
 import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Newsreader, Nunito } from "next/font/google";
 import "./globals.css";
 
-const plusJakarta = Plus_Jakarta_Sans({
+/** Rounded UI — parallels SF Rounded in the app (lists, body, buttons). */
+const nunito = Nunito({
   subsets: ["latin"],
-  variable: "--font-plus-jakarta",
+  variable: "--font-ui",
+  weight: ["400", "500", "600", "700"],
+});
+
+/** Display serif — parallels SF Serif / New York for hero & section titles. */
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  variable: "--font-display",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -23,10 +32,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${plusJakarta.variable} font-sans antialiased`}>
-        {children}
-      </body>
+    <html lang="en" className={`${nunito.variable} ${newsreader.variable}`}>
+      <body className="font-sans antialiased">{children}</body>
     </html>
   );
 }

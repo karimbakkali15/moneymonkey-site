@@ -44,10 +44,12 @@ export function FAQ() {
     <section id="faq" className="py-24 px-4 sm:px-6 lg:px-8 bg-card/40">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground mb-4 text-balance">
+          <h2 className="font-serif text-3xl sm:text-4xl font-semibold tracking-tight text-foreground mb-4 text-balance">
             Frequently asked questions
           </h2>
-          <p className="text-lg text-muted-foreground text-pretty leading-relaxed">Straight answers about Meridian.</p>
+          <p className="font-sans text-lg text-muted-foreground text-pretty leading-relaxed">
+            Straight answers about <span className="text-[#e0c78c] font-medium">Meridian</span>.
+          </p>
         </div>
 
         <div className="space-y-4">
@@ -58,7 +60,7 @@ export function FAQ() {
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 aria-expanded={openIndex === index}
               >
-                <span className="font-medium text-foreground pr-2">{faq.question}</span>
+                <span className="font-sans font-medium text-foreground pr-2">{faq.question}</span>
                 <ChevronDown
                   className={cn(
                     "w-5 h-5 text-muted-foreground transition-transform shrink-0",
@@ -72,7 +74,7 @@ export function FAQ() {
                   openIndex === index ? "max-h-[min(28rem,80vh)]" : "max-h-0"
                 )}
               >
-                <p className="px-6 pb-4 text-muted-foreground leading-relaxed text-[15px]">{faq.answer}</p>
+                <p className="font-sans px-6 pb-4 text-muted-foreground leading-relaxed text-[15px]">{faq.answer}</p>
               </div>
             </div>
           ))}

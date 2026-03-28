@@ -12,7 +12,7 @@ export function AnimatedHeading({
   return (
     <h1
       className={cn(
-        "inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#7a9eff] via-white to-[#c7dbff]",
+        "font-serif font-normal type-display-tight inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#7a9eff] via-white to-[#e0c78c]",
         className,
       )}
     >

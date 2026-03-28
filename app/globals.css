@@ -1,9 +1,11 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
+  /* App: DesignSystem.Typography — Nunito ≈ SF Rounded, Newsreader ≈ SF Serif */
+  --font-sans: var(--font-ui), ui-rounded, system-ui, sans-serif;
+  --font-serif: var(--font-display), ui-serif, Georgia, "Times New Roman", serif;
 
-  /* Aligned with iOS DesignSystem.Colors (Meridian) */
+  /* Surfaces & blue — DesignSystem.Colors */
   --color-background: #0f0f12;
   --color-foreground: #fafafa;
 
@@ -23,6 +25,12 @@
 
   --color-accent: #c7dbff;
   --color-accent-foreground: #0f0f12;
+
+  /* Gold — DesignSystem.Colors.highlightGold* / info (champagne, use sparingly) */
+  --color-gold: #c7a870;
+  --color-gold-bright: #e0c78c;
+  --color-gold-muted: #9e845c;
+  --color-gold-soft: #c2a36b;
 
   --color-border: rgba(255, 255, 255, 0.08);
   --color-ring: #3373fa;
@@ -60,5 +68,18 @@ body {
   }
   .text-pretty {
     text-wrap: pretty;
+  }
+
+  /** App meta line: heroMeta + uppercase + tracking */
+  .type-meta-caps {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.085em;
+    text-transform: uppercase;
+  }
+
+  /** Large display numbers / emphasis — slight negative tracking like heroBalance */
+  .type-display-tight {
+    letter-spacing: -0.045em;
   }
 }

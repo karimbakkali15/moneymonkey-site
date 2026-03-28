@@ -49,11 +49,12 @@ export function Pricing() {
     <section id="pricing" className="py-24 px-4 sm:px-6 lg:px-8 bg-card/40 border-y border-white/[0.04]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground mb-4 text-balance">
+          <h2 className="font-serif text-3xl sm:text-4xl font-semibold tracking-tight text-foreground mb-4 text-balance">
             Simple pricing
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">
-            Start free. Upgrade when Meridian has earned a place in your routine.
+          <p className="font-sans text-lg text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">
+            Start free. Upgrade when Meridian has{" "}
+            <span className="text-[#e0c78c] font-medium">earned a place</span> in your routine.
           </p>
         </div>
 
@@ -63,29 +64,40 @@ export function Pricing() {
               key={plan.name}
               className={cn(
                 "relative bg-card border rounded-2xl p-8 flex flex-col border-white/[0.08]",
-                plan.popular ? "border-[#3373fa]/60 shadow-lg shadow-[#3373fa]/10 ring-1 ring-[#3373fa]/20" : ""
+                plan.popular
+                  ? "border-[#3373fa]/45 ring-1 ring-[#3373fa]/25 shadow-[0_12px_40px_-8px_rgba(51,115,250,0.2),0_0_60px_-20px_rgba(224,199,140,0.12)]"
+                  : ""
               )}
             >
               {plan.popular && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#2556d8] to-[#3373fa] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 font-sans bg-[#0c0e14] border border-[#e0c78c]/35 text-[#e0c78c] text-[11px] uppercase tracking-[0.12em] font-semibold px-3 py-1.5 rounded-full">
                   Most popular
                 </div>
               )}
 
               <div className="mb-6">
-                <h3 className="text-xl font-semibold text-foreground mb-2 tracking-tight">{plan.name}</h3>
-                <div className="flex items-baseline gap-1">
-                  <span className="text-4xl font-semibold tracking-tight text-foreground">{plan.price}</span>
-                  <span className="text-muted-foreground">/{plan.period}</span>
+                <h3 className="font-serif text-xl font-semibold text-foreground mb-2 tracking-tight">{plan.name}</h3>
+                <div className="flex items-baseline gap-1 type-display-tight">
+                  <span className="font-serif text-4xl font-semibold text-foreground">
+                    {plan.price.startsWith("£") ? (
+                      <>
+                        <span className="text-[#e0c78c]">£</span>
+                        {plan.price.slice(1)}
+                      </>
+                    ) : (
+                      plan.price
+                    )}
+                  </span>
+                  <span className="font-sans text-muted-foreground">/{plan.period}</span>
                 </div>
-                <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{plan.description}</p>
+                <p className="font-sans text-sm text-muted-foreground mt-2 leading-relaxed">{plan.description}</p>
               </div>
 
               <ul className="space-y-3 mb-8 flex-1">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-[#7a9eff] shrink-0 mt-0.5" />
-                    <span className="text-sm text-muted-foreground leading-relaxed">{feature}</span>
+                    <Check className="w-5 h-5 text-[#e0c78c] shrink-0 mt-0.5 opacity-90" />
+                    <span className="font-sans text-sm text-muted-foreground leading-relaxed">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -93,9 +105,9 @@ export function Pricing() {
               <Link
                 href="https://apps.apple.com"
                 className={cn(
-                  "w-full py-3 rounded-xl font-semibold text-center text-sm transition-all",
+                  "font-sans w-full py-3 rounded-xl font-semibold text-center text-sm transition-all",
                   plan.popular
-                    ? "bg-gradient-to-r from-[#2556d8] to-[#3373fa] text-white hover:opacity-95 shadow-lg shadow-[#3373fa]/25"
+                    ? "bg-gradient-to-r from-[#2556d8] to-[#3373fa] text-white hover:opacity-95 shadow-lg shadow-[#3373fa]/25 ring-1 ring-[#e0c78c]/20"
                     : "bg-secondary text-secondary-foreground hover:bg-white/[0.06] border border-white/[0.06]"
                 )}
               >

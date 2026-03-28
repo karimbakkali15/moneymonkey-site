@@ -11,15 +11,15 @@ export function Footer() {
               <span className="relative inline-flex w-9 h-9 rounded-xl overflow-hidden ring-1 ring-white/10">
                 <Image src="/app-icon.png" alt="Meridian" fill className="object-cover" sizes="36px" />
               </span>
-              <span className="font-semibold text-lg tracking-tight text-foreground">Meridian</span>
+              <span className="font-serif font-semibold text-lg tracking-tight text-foreground">Meridian</span>
             </Link>
-            <p className="text-sm text-muted-foreground leading-relaxed">
+            <p className="font-sans text-sm text-muted-foreground leading-relaxed">
               Calm, intelligent finance — bank connections, budgets, and AI that respects your data.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-foreground mb-4 text-sm">Product</h4>
+            <h4 className="type-meta-caps text-[#c7a870] mb-4">Product</h4>
             <ul className="space-y-3">
               <li>
                 <Link href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -40,7 +40,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-foreground mb-4 text-sm">Support</h4>
+            <h4 className="type-meta-caps text-[#c7a870] mb-4">Support</h4>
             <ul className="space-y-3">
               <li>
                 <Link href="/support.html" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -59,7 +59,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-foreground mb-4 text-sm">Legal</h4>
+            <h4 className="type-meta-caps text-[#c7a870] mb-4">Legal</h4>
             <ul className="space-y-3">
               <li>
                 <Link
