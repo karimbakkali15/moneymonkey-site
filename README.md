@@ -21,9 +21,19 @@ npm install
 npm run dev
 ```
 
-## Deploy (Vercel)
+## Production on Vercel
 
-Connect the GitHub repo and deploy; root is this folder. Static legal pages live in `public/` (`privacy-policy.html`, `terms.html`, `support.html`).
+If **GitHub is already connected** to this project, every push to **`main`** creates a **Production** deployment automatically. Nothing else is required for “go live.”
+
+1. [Vercel Dashboard](https://vercel.com/dashboard) → open the project linked to `karimbakkali15/moneymonkey-site`.
+2. **Settings → Git**: confirm **Production Branch** is **`main`**.
+3. **Deployments**: the top deployment for `main` should show the **Production** badge. Open it to copy the live URL.
+
+**CLI (optional):** from this folder, after `npx vercel login`, run `npm run deploy:prod` to push the current tree to production without waiting for Git.
+
+`vercel.json` pins the runtime to **`lhr1`** (London) for lower latency in the UK. Change `regions` if you prefer another edge.
+
+Static legal pages: `public/privacy-policy.html`, `terms.html`, `support.html`.
 
 ## Assets
 
